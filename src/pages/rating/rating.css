@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.body {
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    min-width: 500px;
+    min-height: 30vh;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+}
+
+.form {
+    padding: 30px 30px;
+    display: block;
+    justify-content: center;
+}
+
+.form-label-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-label-stars {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-stars {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.star {
+    cursor: pointer;
+    transition: color 200ms;
+    margin-bottom: -1rem;
+}
+
+.serasa-logo {
+    position: static;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-left: 5rem;
+    padding: 0.1rem;
+    display: block;
+}
+
+.input {
+    width: 60%;
+    margin-left: 5rem;
+}
+
+.button {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    width: 65%;
+    display: flex;
+}
+
+.sucess-loading {
+    position: absolute;
+    background-color: rgba(0, 150, 32, 0.4);
+    height: 9rem;
+    width: 32rem;
+    border-radius: 16px 16px 0px 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 1330px) {
+
+    body,
+    html {
+        overflow-x: hidden !important;
+    }
+
+    .body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        border: none;
+    }
+
+    .sucess-loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100vw;
+        height: 5rem;
+        background-color: rgba(0, 150, 32, 0.4);
+        border-radius: 0px;
+        border: none;
+    }
+
+    .sucess-text {
+        display: block;
+        text-align: center;
+        margin-top: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    body,
+    html {
+        overflow-x: hidden !important;
+    }
+
+    .form-body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        border: none;
+    }
+
+    .sucess-loading {
+        position: absolute;
+        top: 0;
+        min-width: 100vw;
+        height: 5rem;
+        background-color: rgba(0, 150, 32, 0.4);
+        border-radius: 0px;
+        border: none;
+    }
+
+    .sucess-text {
+        left: 0;
+        top: 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .sucess-loading {
+        position: absolute;
+        top: 0;
+        min-width: 100vw;
+        height: 5rem;
+        background-color: rgba(0, 150, 32, 0.4);
+        border-radius: 0px;
+        border: none;
+    }
+
+    .sucess-text {
+        margin-left: 2rem;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sucess-text {
+        margin-left: 3rem;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .sucess-text {
+        margin-right: 16rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+    }
+}
